@@ -4,7 +4,7 @@
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 						
 						<!-- 사원 프로필 모달 -->
-						<form action="./addRoom" method="post">
+						<form action="./oneChat" method="post">
 							<div id="modal" class="modal-overlay" style="z-index: 100;">
 								<div class="modal-window">
 									<div class="close-area">X</div>

@@ -17,7 +17,6 @@ charset=UTF-8" pageEncoding="UTF-8"%>
     <link rel="stylesheet" href="/css/chat/chatroom.css">
     
     
-    <link rel="icon" href="/images/favicon.png">
 	<title>그룹채팅 💭 </title>
 </head>
 

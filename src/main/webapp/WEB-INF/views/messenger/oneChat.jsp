@@ -16,9 +16,7 @@
     
     <link rel="stylesheet" href="/css/chat/chatroom.css">
     
-    
-   <link rel="icon" href="/images/favicon.png">
-	<title> 1:1채팅 💭 </title>
+   	<title> 1:1채팅 💭 </title>
 </head>
 
 

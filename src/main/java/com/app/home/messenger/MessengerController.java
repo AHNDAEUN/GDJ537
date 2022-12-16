@@ -373,11 +373,15 @@ public class MessengerController extends Socket {
 	// --------------------- 다은 ------------------------------
 
 	@GetMapping("oneChat")
-	public ModelAndView chatroom(HttpSession session, UserVO userVO)throws Exception{
+	public ModelAndView chatroom(HttpSession session, UserVO userVO, RoomVO roomVO)throws Exception{
 		ModelAndView mv= new ModelAndView();
 		SecurityContextImpl context = (SecurityContextImpl)session.getAttribute("SPRING_SECURITY_CONTEXT");
 	    Authentication authentication = context.getAuthentication();
 	    userVO  =(UserVO)authentication.getPrincipal();	  
+	    
+	    int count = messengerService.getUserCount(roomVO);
+		mv.addObject("count", count);
+		
 	    mv.addObject("userVO", userVO);  
 		mv.setViewName("messenger/oneChat");
 		
